@@ -2,9 +2,10 @@ const movies = require("../data/movies");
 
 function getMoviesByActor(ator) {
   const out = movies.filter((ele) => {
-    return filme = ele.elenco.find(ele => {
+    const filme = ele.elenco.find(ele => {
       return ele == ator 
     })
+    return filme
   })
   return out;
 }
